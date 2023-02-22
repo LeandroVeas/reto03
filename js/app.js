@@ -1,4 +1,4 @@
-/* Hola Joni hasta estoy llegando, pero le estoy metiendo cabezón */
+/* Hola Joni hasta aca llegue, le estoy metiendo lo mas que puedo lince, salduos*/
 
 /* VARIABLES VENTANA MODAL */
 let abrirModal = document.querySelector(".abrir-modal");
@@ -43,80 +43,77 @@ botonAgregado.addEventListener(`click`, () => {
         let divDentro = document.querySelector(".div-dentro");
         let ul = document.createElement("ul");
         let lista = document.createElement("li");
-let imgA = document.createElement("img");
-imgA.src = "assets/usuario(1).png" 
+        let imgA = document.createElement("img");
+        imgA.src = "assets/usuario(1).png" 
 
 
 
         ul.appendChild(lista);
         divDentro.appendChild(ul);
         parteCentral.appendChild(divDentro);
-        
-        
         lista.textContent =input;
+        
+                let selec = document.getElementById("tarea");
+                let img2 = document.createElement("img");
+                img2.src = "assets/red-domestica.png"
+                let img3 = document.createElement("img");
+                img3.src = "assets/consola.png"
+                let img4 = document.createElement("img");
+                img4.src ="assets/maletin.png"
 
-                   let selec = document.getElementById("tarea");
-                   let img2 = document.createElement("img");
-                   img2.src = "assets/red-domestica.png"
-                   let img3 = document.createElement("img");
-                   img3.src = "assets/consola.png"
-                   let img4 = document.createElement("img");
-                   img4.src ="assets/maletin.png"
-
-                   
-                  if(selec.value == "domestica"){
-                   
+                if(selec.value == "domestica"){
                     ul.appendChild(img2)
                     img2.style.width ="30px" 
-
-                               
-                    
-                   
-                     }else if (selec.value == "personal"){
-                        ul.appendChild(imgA)
-                        imgA.style.width ="20px"
-                     }else if(selec.value =="entretenimiento"){
-                        ul.appendChild(img3)
-                        img3.style.width ="30px"
-                     }else {
-                        ul.appendChild(img4)
-                        img4.style.width ="30px"
-                     }
-
-
-
-                     function cambiarColor (){
-                      
-                        let gris = document.getElementById("gris");
-                        let verde = document.getElementById("verde");
-                        let naranja = document.getElementById("naranja");
-                        let rojo = document.getElementById("rojo");
-                         
-                        
-
-
-                        }
-
-
-                        }
-                   
-
-
-
-                        
-
-
-
-
-
-     
-
-                   
+                }else if (selec.value == "personal"){
+                    ul.appendChild(imgA)
+                    imgA.style.width ="20px"
+                }else if(selec.value =="entretenimiento"){
+                    ul.appendChild(img3)
+                    img3.style.width ="30px"
+                }else{
+                    ul.appendChild(img4)
+                    img4.style.width ="30px"
                 }
-          
+            }
+        }
+    )
 
 
-)
+
+let gris = document.getElementById("gris");
+let verde = document.getElementById("verde");
+let naranja = document.getElementById("naranja");
+let rojo = document.getElementById("rojo");
+
+
+                     
+/* function prioridad () {
+    let prioridadGris = document.getElementById("gris");
+    let prioridadVerde = document.getElementById("verde");
+    let prioridadNaranja = document.getElementById("naranja");
+    let prioridadRojo = document.getElementById("rojo");
+
+  let cajaGris =    document.querySelector(`.div-dentro ul`).style.borderRight=  "15px solid gray"
+  let cajaVerde =    document.querySelector(`.div-dentro ul`).style.borderRight=  "15px solid green"
+  let cajaNaranja =    document.querySelector(`.div-dentro ul`).style.borderRight=  "15px solid orange"
+let cajaRojo =    document.querySelector(`.div-dentro ul`).style.borderRight=  "15px solid red" 
+
+
+prioridadGris.addEventListener("click",()=>{
+    cajaGris
+})
+
+prioridadVerde.addEventListener("click",()=>{
+    cajaVerde
+})
+prioridadNaranja.addEventListener("click",()=>{
+    cajaNaranja
+})
+
+prioridadRojo.addEventListener("click",()=>{
+    cajaRojo
+})
 
 
 
+} */
