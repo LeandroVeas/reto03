@@ -43,9 +43,11 @@ h1{
     position: relative;
     bottom: 50px;    
 }
+
+
 .boton-uno{
     height: 20vh;
-    width: 100%;
+    width: 90%;
     display: flex;
 
 justify-content: end;
@@ -91,7 +93,7 @@ height: 80px;
     margin: auto;
     max-width: 600px;
     height: 500px;
-    width: 90%;
+    width: 0 auto;
     border: 2px solid black;
     border-radius: 6px;
     padding: 3em 2.5em;
@@ -201,13 +203,24 @@ position: absolute;
 margin-top: 140px;
 
 
+
+
 }
 
 
 .div-dentro ul{
-    
+    width: 90%;
     margin: 5px;
     padding: 20px;
+     background-color: rgb(49, 209, 209); 
+     
+     display: flex;
+     flex-direction: row-reverse;
+     justify-content: flex-end;
+     align-items: center;
+     height: 50px;
+    
+      
     
     
     
@@ -216,8 +229,10 @@ margin-top: 140px;
 }
 .div-dentro ul li {
     list-style: none;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: bold;
+    margin:0 5px;
+   
 }
 
 .img-personal{
